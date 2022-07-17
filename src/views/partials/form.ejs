@@ -1,0 +1,8 @@
+<div class="container d-flex justify-content-center flex-column w-50">
+    <a href="/api/pokemones" class="btn btn-success">Haga click aquí para ver un JSON de la Pokedex de Kanto!</a>
+    <form action="/api/pokemon" method="post">
+        <legend>Busque un pokemon por su número (1 al 151)</legend>
+        <input type="number" placeholder="N° de pokemon" name="id" class="form-control" min="1" max="151">
+        <button type="submit" class="btn btn-warning">Buscar</button>
+    </form>
+</div>
