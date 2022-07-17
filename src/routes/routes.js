@@ -11,8 +11,8 @@ router.get('/api/pokemones', function(req, res) {
     res.json(pokedex);
 });
 
-router.post('/api/pokemon', function(req, res) {
-    const pokemon = pokedex.find(item => item.id === parseInt(req.body.id));
+router.get('/api/pokemon/:id', function(req, res) {
+    const pokemon = pokedex.find(item => item.id.toString() === (req.params.id));
     res.json(pokemon);
 });
 
