@@ -23,5 +23,5 @@ app.set('json spaces', 2);
 
 app.use(indexRoutes);
 
-app.listen(3000);
-console.log('Servidor funcionando en el puerto 3000 con nodemon');
+app.listen(process.env.PORT || 3000);
+console.log('Servidor funcionando');
