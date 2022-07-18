@@ -1,10 +1,10 @@
 import { Router, urlencoded } from "express";
 import pokedex from "./pokedex.js";
-import cors from "cors";
+import cors from "cors"
 
 const router = Router();
 
-router.use(cors)
+router.use(cors())
 
 router.get('/', function(req, res) {
     res.render('home')

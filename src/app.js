@@ -9,7 +9,7 @@ import {fileURLToPath} from 'url';
 import indexRoutes from './routes/routes.js';
 // body-parser para obtener datos de un form request
 import bodyParser from 'body-parser';
-import cors from 'cors'
+import cors from "cors";
 
 const app = express();
 
@@ -17,9 +17,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 app.set('views', join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-app.use(cors)
 
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(cors())
 
 app.set('json spaces', 2);
 
